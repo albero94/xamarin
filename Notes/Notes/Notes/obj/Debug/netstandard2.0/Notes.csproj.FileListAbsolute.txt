@@ -1,0 +1,12 @@
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\bin\Debug\netstandard2.0\Notes.deps.json
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\bin\Debug\netstandard2.0\Notes.dll
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\bin\Debug\netstandard2.0\Notes.pdb
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Notes.csprojAssemblyReference.cache
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Notes.csproj.CoreCompileInputs.cache
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Notes.AssemblyInfoInputs.cache
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Notes.AssemblyInfo.cs
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Notes.dll
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Notes.pdb
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Views\NoteEntryPage.xaml.g.cs
+C:\Users\aalbero\source\repos\Notes\Notes\Notes\obj\Debug\netstandard2.0\Views\NotesPage.xaml.g.cs

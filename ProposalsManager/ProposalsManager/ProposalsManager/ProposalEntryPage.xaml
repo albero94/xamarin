@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProposalsManager.ProposalEntryPage">
+    <ContentPage.Title>Proposal</ContentPage.Title>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Entry Placeholder="Name"
+                        Text="{Binding Name}"/>
+
+                <Editor Placeholder="Description"  
+                        HeightRequest="100"
+                        Text="{Binding Description}"/>
+
+                <Entry Placeholder="Category"
+                        Text="{Binding Category}"/>
+
+                <Entry Placeholder="Company"
+                        Text="{Binding Company}"/>
+
+                <Entry Placeholder="Contact"
+                        Text="{Binding Contact}"/>
+
+                
+
+                <Label Text="Prime"/>
+                <Switch x:Name="Prime"
+                        HorizontalOptions="Start"
+                        IsToggled="{Binding IsPrime}"/>
+
+                <Label Text="Issued Date"/>
+                <DatePicker Format="D"
+                  Date="{Binding IssuedDate}"/>
+
+                <Label Text="Due Date"/>
+                <DatePicker Format="D"
+                            Date="{Binding DueDate}"/>
+
+                <Picker x:Name="statusPicker"
+                        Title="Status"
+                        SelectedItem="{Binding Status}"
+                        SelectedIndexChanged="Status_SelectedIndexChanged">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Open</x:String>
+                            <x:String>In progress</x:String>
+                            <x:String>Submitted</x:String>
+                            <x:String>Closed</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                
+                <Label x:Name="submittedDateLabel"
+                       Text="Submitted Date"
+                       IsVisible="False"/>
+                <DatePicker x:Name="submittedDateDatePicker"
+                            Format="D"
+                            Date="{Binding SubmittedDate}"
+                            IsVisible="False"/>
+
+                
+                <Label Text="Last Updated By"/>
+                <Label Text="{Binding LastUpdatedBy}"/>
+
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <Button Text="Save"
+                            Clicked="Save_Clicked"  />
+                    <Button Text="Delete"
+                            Clicked="Delete_Clicked"  />
+                </StackLayout>
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

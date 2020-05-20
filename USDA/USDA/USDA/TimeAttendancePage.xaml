@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="USDA.TimeAttendancePage">
+    <ContentPage.Title>Time Entries</ContentPage.Title>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+" Clicked="OnTimeEntryAddedClicked"/>
+    </ContentPage.ToolbarItems>
+    <ListView x:Name="listView"
+              ItemSelected="OnListViewItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Date, StringFormat='{0:MM/d/yy}'}"
+                          TextColor="{StaticResource TextColor}"
+                          Detail="{Binding TotalHours, StringFormat='Total hours: {0}'}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

@@ -1,0 +1,13 @@
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\bin\Debug\netstandard2.0\PhoneWord.deps.json
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\bin\Debug\netstandard2.0\PhoneWord.dll
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\bin\Debug\netstandard2.0\PhoneWord.pdb
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\PhoneWord.csprojAssemblyReference.cache
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\PhoneWord.csproj.CoreCompileInputs.cache
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\PhoneWord.AssemblyInfoInputs.cache
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\PhoneWord.AssemblyInfo.cs
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\PhoneWord.dll
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\PhoneWord.pdb
+C:\Users\aalbero\source\repos\PhoneWord\PhoneWord\PhoneWord\obj\Debug\netstandard2.0\CallHistoryPage.xaml.g.cs

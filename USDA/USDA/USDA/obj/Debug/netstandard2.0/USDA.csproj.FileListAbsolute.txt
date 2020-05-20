@@ -1,0 +1,13 @@
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\bin\Debug\netstandard2.0\USDA.deps.json
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\bin\Debug\netstandard2.0\USDA.dll
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\bin\Debug\netstandard2.0\USDA.pdb
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\USDA.csprojAssemblyReference.cache
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\USDA.csproj.CoreCompileInputs.cache
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\USDA.AssemblyInfoInputs.cache
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\USDA.AssemblyInfo.cs
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\USDA.dll
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\USDA.pdb
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\TimeAttendancePage.xaml.g.cs
+C:\Users\aalbero\source\repos\USDA\USDA\USDA\obj\Debug\netstandard2.0\TimeAttendanceEntryPage.xaml.g.cs

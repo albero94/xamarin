@@ -1,0 +1,13 @@
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\bin\Debug\netstandard2.0\ProposalsManager.deps.json
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\bin\Debug\netstandard2.0\ProposalsManager.dll
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalsManager.csprojAssemblyReference.cache
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalsManager.csproj.CoreCompileInputs.cache
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalsManager.AssemblyInfoInputs.cache
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalsManager.AssemblyInfo.cs
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\bin\Debug\netstandard2.0\ProposalsManager.pdb
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalEntryPage.xaml.g.cs
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalList.xaml.g.cs
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalsManager.dll
+C:\Users\aalbero\source\repos\ProposalsManager\ProposalsManager\ProposalsManager\obj\Debug\netstandard2.0\ProposalsManager.pdb

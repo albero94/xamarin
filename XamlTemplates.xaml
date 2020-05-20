@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormsGallery.XamlExamples.BoxViewDemoPage"
+             Title="BoxView Demo">
+    <StackLayout>
+
+    Views for Presentation
+        <Label Text="BoxView"
+               FontSize="50"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+        <BoxView Color="Accent"
+                 WidthRequest="150"
+                 HeightRequest="150"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+
+		<Image Source="https://aka.ms/campus.jpg"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" />
+
+		<WebView Source="https://www.xamarin.com"
+                 VerticalOptions="FillAndExpand" />
+
+		<OpenGLView x:Name="openGLView"
+                    VerticalOptions="FillAndExpand" />
+
+
+
+
+      	<Button Text="Click Me!"
+                Font="Large"
+                BorderWidth="1"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnButtonClicked" />
+
+        <ImageButton Source="XamarinLogo.png"
+                    HorizontalOptions="Center"
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="OnImageButtonClicked" />
+
+        <SearchBar Placeholder="Xamarin.Forms Property"
+                   SearchButtonPressed="OnSearchBarButtonPressed" />
+
+        <ScrollView VerticalOptions="FillAndExpand">
+            <Label x:Name="resultsLabel" />
+        </ScrollView>
+
+       	<Slider x:Name="slider"
+                 Minimum="0"
+                 Maximum="100"
+                 VerticalOptions="CenterAndExpand" />
+
+        <Stepper x:Name="stepper"
+                 Minimum="0"
+                 Maximum="10"
+                 Increment="0.1"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand" />
+
+        <Switch x:Name="switch"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+
+        <DatePicker Format="D"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="10, 0" />
+
+        <TimePicker Format="T"
+                    VerticalOptions="CenterAndExpand"
+                    Margin="10, 0" />
+
+
+
+
+        <Entry Keyboard="Text"
+               Placeholder="Enter password"
+               IsPassword="True"
+               VerticalOptions="CenterAndExpand" />
+
+       	<Editor VerticalOptions="FillAndExpand"
+                Margin="10" />
+        <Editor Placeholder="Enter your note"
+                    Text="{Binding Text}"
+                    HeightRequest="100"/>
+
+
+
+      	<ActivityIndicator IsRunning="True"
+                           VerticalOptions="CenterAndExpand" />
+
+       	<ProgressBar x:Name="progressBar"
+                     VerticalOptions="CenterAndExpand"
+                     Margin="10, 0" />
+
+
+
+     	<CollectionView ItemsSource="{Binding Monkeys}">
+            <CollectionView.ItemsLayout>
+               <GridItemsLayout Orientation="Vertical"
+                                Span="2" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="35" />
+                            <RowDefinition Height="35" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70" />
+                            <ColumnDefinition Width="80" />
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.RowSpan="2" 
+                               Source="{Binding ImageUrl}" 
+                               Aspect="AspectFill"
+                               HeightRequest="60" 
+                               WidthRequest="60" />
+                        <Label Grid.Column="1" 
+                               Text="{Binding Name}" 
+                               FontAttributes="Bold"
+                               LineBreakMode="TailTruncation" />
+                        <Label Grid.Row="1"
+                               Grid.Column="1" 
+                               Text="{Binding Location}"
+                               LineBreakMode="TailTruncation"
+                               FontAttributes="Italic" 
+                               VerticalOptions="End" />
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+         <ListView Margin="10, 0">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:Person}">
+                    <local:Person Name="Abigail" Birthday="01/15/1975" FavoriteColor="Aqua" />
+                    <local:Person Name="Bob" Birthday="02/20/1976" FavoriteColor="Black" />
+                    <local:Person Name="Cathy" Birthday="03/10/1977" FavoriteColor="Blue" />
+                    <local:Person Name="David" Birthday="04/25/1978" FavoriteColor="Fuchsia" />
+                    <local:Person Name="Eugenie" Birthday="05/05/1979" FavoriteColor="Gray" />
+                    <local:Person Name="Freddie" Birthday="06/30/1980" FavoriteColor="Green" />
+                    <local:Person Name="Greta" Birthday="07/15/1981" FavoriteColor="Lime" />
+                    <local:Person Name="Harold" Birthday="08/10/1982" FavoriteColor="Maroon" />
+                </x:Array>
+            </ListView.ItemsSource>                
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="0, 5"
+                                     Orientation="Horizontal">
+                            <BoxView Color="{Binding FavoriteColor}" />
+                            <StackLayout VerticalOptions="Center"
+                                         Spacing="0">
+                                <Label Text="{Binding Name}" />
+                                <Label Text="{Binding Birthday, StringFormat='Born {0:d}'}" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+         </ListView>
+
+        <Picker Title="Color"
+            VerticalOptions="CenterAndExpand"
+            Margin="10, 0"
+            SelectedIndexChanged="OnPickerSelectedIndexChanged">
+	        <Picker.Items>
+	            <x:String>Aqua</x:String>
+	            <x:String>Black</x:String>
+	            <x:String>Blue</x:String>
+	            <x:String>Fuchsia</x:String>
+	            <x:String>Gray</x:String>
+	            <x:String>Green</x:String>
+	            <x:String>Lime</x:String>
+	            <x:String>Maroon</x:String>
+	            <x:String>Navy</x:String>
+	            <x:String>Olive</x:String>
+	            <x:String>Purple</x:String>
+	            <x:String>Red</x:String>
+	            <x:String>Silver</x:String>
+	            <x:String>Teal</x:String>
+	            <x:String>White</x:String>
+	            <x:String>Yellow</x:String>
+	        </Picker.Items>
+        </Picker>
+
+        Table View, but code not found
+
+    </StackLayout>
+</ContentPage>

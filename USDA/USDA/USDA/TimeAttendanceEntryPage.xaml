@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:USDA"
+             x:Class="USDA.TimeAttendanceEntryPage">
+    <ContentPage.Title>Daily Time Log</ContentPage.Title>
+    <ScrollView>
+        <StackLayout Padding="10">
+            <Label Text="Date"/>
+            <DatePicker Format="D"
+                        Date="{Binding Date}"/>
+
+            <Picker Title="Commodity"
+                    SelectedItem="{Binding Commodity}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String></x:String>
+                        <x:String>None</x:String>
+                        <x:String>Livestock</x:String>
+                        <x:String>Poultry</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker Title="Exceptions"
+                    SelectedItem="{Binding Exception}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String></x:String>
+                        <x:String>Dark Time</x:String>
+                        <x:String>Travel</x:String>
+                        <x:String>Telework Regular</x:String>
+                        <x:String>Telework Other</x:String>
+                        <x:String>Call back</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Picker Title="Bill To"
+                    SelectedItem="{Binding RequestType}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String></x:String>
+                        <x:String>Accounting</x:String>
+                        <x:String>Scheduled</x:String>
+                        <x:String>Unscheduled</x:String>
+                        <x:String>Audit</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Entry Keyboard="Numeric"
+                   Placeholder="Number"
+                   Text="{Binding RequestId}"/>
+
+            <Label Text="Start Time"/>
+            <TimePicker x:Name="startTime"
+                        Format="T" 
+                        Time="{Binding StartTime}"
+                        PropertyChanged="TimePicker_timeChanged"/>
+
+            <Label Text="End Time"/>
+            <TimePicker x:Name="endTime"
+                        Format="T" 
+                        Time="{Binding EndTime}"
+                        PropertyChanged="TimePicker_timeChanged"/>
+
+
+            <Picker Title="Activity"
+                    SelectedItem="{Binding Activity}">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String></x:String>
+                        <x:String>Activity 1</x:String>
+                        <x:String>Activity 2</x:String>
+                        <x:String>Activity 3</x:String>
+                        <x:String>Activity 4</x:String>
+                        <x:String>Activity 5</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            
+            <Label Text="Total Hours"/>
+            <Label x:Name="totalHours"
+                    Text="{Binding TotalHours}"/>
+
+            <Button Text="CLOSE" Clicked="CloseDay_Clicked"/>
+            <Button Text="DELETE" Clicked="Delete_Clicked"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

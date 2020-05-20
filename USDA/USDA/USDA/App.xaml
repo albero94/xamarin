@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="USDA.App">
+    <Application.Resources>
+
+        <Color x:Key="ButtonBackgroundColor">#3D9232</Color>
+        <Color x:Key="ButtonTextColor">#FFF</Color>
+        <Color x:Key="NavigationColor">#5CA956</Color>
+        <Color x:Key="TextColor">#2F712A</Color> 
+
+
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor"
+                    Value="{StaticResource NavigationColor}"/>
+        </Style>
+        
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource ButtonBackgroundColor}"/>
+            <Setter Property="TextColor"
+                    Value="{StaticResource ButtonTextColor}"/>
+        </Style>               
+        
+    </Application.Resources>
+</Application>
